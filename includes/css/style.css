@@ -1,0 +1,518 @@
+body{
+	background-image: url('../images/loginback.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #BAC5CB;
+	background-repeat: no-repeat;
+
+	font-family: "HelveticaNeue-Light","HelvLightIBM",Arial,sans-serif;
+	line-height: 19px;
+	font-size: 13px;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+a:hover{
+	color: #999;
+}
+.menuBar{
+	background-color: #FFFFFF;
+	_background-color: rgba(35,39,45,0.7);
+	_background-color: rgba(91,192,222,0.7);
+	_background-color: rgb(81,171,81);
+	
+	position: fixed;
+	width: 100%;
+	top:0;
+	left:0;
+	right: 0;
+	height: 70px;
+	
+	border-bottom: 1px solid #e0e0e0;
+}
+.menuBar img.icns{
+	width: 30px;
+	cursor: pointer;
+}
+.menuBar img.icns:hover{
+	border-bottom: solid 2px transparent;
+	
+}
+div.tagList{
+	max-height:300px;
+	overflow: auto;
+	border-bottom: inset 3px #ddf;
+
+}
+.menuBar .wrapper{
+	width: 90%;
+	margin:0 auto;
+}
+/* menu bar */
+.menuBar form {
+	display: inline-block;
+	width: 50%;
+	margin-left: 10%;
+}
+
+.menuBar input.pet_search{
+	width: 100%;
+	padding: 10px;
+	border:solid 1px #e0e0e0;
+	
+	color:#333;
+	margin: 15px 5px;
+}
+
+.menuBar input.pet_search:focus{
+	border:solid 1px #ddd;
+	background-color: #ddd;
+}
+.menuBar ul.menu-elems{
+	display: inline;
+	float: right;
+}
+.menuBar ul.menu-elems li{
+	display: inline-block;
+	list-style: none;
+	padding:4px;
+}
+li.studname{
+	color:#666;
+	font-size: 	12pt;
+}
+.menuBar ul.menu-elems li a{
+	color:#ddd;
+	text-decoration: none;
+}
+/* petition */
+div.post{
+	
+	
+	color:#666666;
+	padding:12px;
+	border:solid 1px #C5C5C5;
+	background-color: white;
+
+	margin-bottom: 10px;
+}
+.post .pet_title{
+	color:#238DCD;
+	font-weight: bold;
+	display: block;
+	padding-bottom: 4px;
+}
+.post .petTogle{
+	padding: 4px;
+	background-color: #36465F;
+	border: none;
+	color:white;
+	display: block;
+	width: auto;	
+}
+
+div.post .post_main{
+
+}
+.post .pet_by{
+	color: black;
+}
+div.post img.glyph {
+	width: 18px;
+}
+
+div.post .pet_date{
+	color:#595959;
+}
+
+div.post .pet_description{
+	border-bottom: solid 1px #dadfe5;
+	padding:10px 10px;
+	margin-bottom: 10px;
+}
+.post .pet_description a{
+	
+	
+	display: block;
+	width: 70px;
+	padding: 10px;
+	border-bottom: solid 1px silver;
+	
+	text-decoration: none;
+	color: inherit;
+
+	
+}
+
+.post .pet_description a:hover{
+	background-color: #ddd;
+}
+div.post a.tag{
+	display:inline-block;
+	text-decoration: none;
+	color:white;
+	background-color: #ddd;
+	color: #333;
+	padding:2px;
+	margin-bottom: 2px;
+}
+
+.post a.tag:hover{
+	background-color: #1a7a90;
+	color:white;
+}
+
+.post .pet_info{
+	background-color: #F7F7F7;
+	border-top: solid 1px #D7D9DE;
+	padding: 5px;
+}
+
+.post .pet_intr a{
+	
+	text-decoration: none;
+	
+	font-weight: bold;
+	padding: 6px;
+	border-radius: 5px;
+	width: 25px;
+	display: inline-block;
+	color:#333;
+	text-align: center;
+}
+.post .pet_intr a:first-child,.post .pet_intr a:nth-child(3n){
+	border: solid 1px #ddd;
+	color:#333;
+	font-weight: bold;
+
+	
+}
+.post .pet_intr a:first-child:hover, .post .pet_intr a.up{
+	background-color: #1a7aa0;
+	color: white;
+}
+
+.post .pet_intr a:nth-child(2){
+	
+	border: solid 1px #ddd;
+	color:#F59090;
+	font-weight: bold;
+}
+.post .pet_intr a:nth-child(2):hover,.post .pet_intr a.down,.post .pet_intr a:nth-child(3n):hover{
+	background-color: #F59080;
+	color:white;
+}
+.area-first{
+	float:left;
+	
+	background-color: white;
+	width: 13%;
+	margin-top:4px;
+
+}
+.area_mid{
+	float: left;
+	width: 50%;
+	float: left;
+	margin-left:10%;
+
+
+}
+
+.area-last{
+	float:left;
+	width: 30%;
+	margin-left: 1%;
+	
+	
+
+}
+
+.area-first,.area-last{
+	
+	padding:10px;
+	
+}
+
+.area-last h2{
+	font-weight: bold;
+	font-size: 12pt;
+	background-color: white;
+	display: block;
+	margin: 0;
+	color: 	black;
+	margin-bottom: 5px;
+	padding: 5px;
+
+}
+/* create petition */
+#pet_create{
+	color:#333;
+}
+#pet_create input.inpt{
+	width: 80%;
+	padding:5px;
+	margin: 4px 0px;
+	border:none;
+	border-bottom:5px solid #ddd;
+}
+#pet_create input.inpt:focus{
+	outline: none;
+	border-bottom:5px solid #238DCD;
+}
+#pet_create textarea{
+	width: 80%;
+	border:none;
+	border-bottom:5px solid #ddd;
+	height:100px;
+	resize: none;
+}
+textarea:focus{
+	 border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+}
+
+#pet_create textarea:focus{
+	
+    border-bottom:5px solid #238DCD;
+   
+    box-shadow: none;
+
+}
+.feedb-suc{
+	background-color: #5EBD5E;
+	
+}
+.feedb-fail{
+	background-color: #F59090;
+
+}
+
+.feedb-fail,.feedb-suc{
+	color:white;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+.btn-sub{
+	
+	background-color: #1a7ab9;
+	cursor: pointer;
+	border:none;
+	padding:10px 20px;
+	color:white;
+	border-color:#1a7ab9 #1a7ab9 #16689e;
+}
+
+.btn-sub:hover{
+	background-color: #546282;
+}
+
+
+/*student profile*/
+.stud_profile{
+	background: white;
+	display: inline-block;
+	float:left;
+	height: 100%;
+	position: fixed;
+	border-right: solid 1px #ddd;
+	width: 30%;
+	left:0;
+	
+}
+.stud_info{
+	border-bottom: solid 1px gray;
+	overflow: auto;
+	height: 55%;
+}
+.stud_profile .profilepic{
+	width: 100px;
+	display: inline-block;
+	margin-right: 20px;
+}
+.stud_profile .information,.stud_profile .profilepic{
+	float: left;
+}
+
+.stud_profile .information dt,.stud_profile .information dd{
+	display: inline;
+	margin: 0;
+}
+.stud_profile .information dt{
+	font-weight: bold;
+	display: table-cell;
+}
+
+.stud_profile .recentActv{
+	overflow: auto;
+	height: 30%;
+
+}
+
+.stud_profile .recentActv .actv
+{
+	
+	display: block;
+	_background-color: #ddd;
+	cursor: pointer;
+	border-bottom: solid 1px gray;
+	padding: 4px;
+	margin:2px;
+}
+.stud_profile .recentActv .actv:hover{
+	background-color: #ddd;
+}
+.myPosts{
+	float: left;
+	margin-left:32%;
+}
+
+.myPosts .post{
+	float:left;
+	width: 40%;
+	
+	margin:1%;
+}
+
+.petOne{
+	width: 50%;
+	margin-right: 5%;
+	margin-left: 5%;
+	float: left;
+}
+div.related{
+	float: left;
+	width: 30%;
+}
+
+.related .title {
+	background: #558C89;
+	color:white;
+	font-weight: 	bold;	
+	display: block;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+.commentBox{
+	width: 80%;
+	float: left;
+	margin-right: 3px;
+	resize: none;
+	border: none;
+	border-bottom: solid 1px #3194D0;
+
+}
+.commentBox:focus{
+	border-bottom: solid 2px #1a7ab9;
+}
+.allComments{
+	background-color: white;
+	padding: 10px;
+	border: solid 1px #ddd;
+}
+.allComments .comment{
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: solid 1px #ddd;
+	font-family: serif;
+}
+
+.comment .commenter{
+	color:#939393;
+	line-height	5px;
+}
+.comment .commenter img{
+	width: 	30px;
+}
+
+.allComments .comment .commentr{
+	color: #3194D0;
+}
+.allComments .date{
+	color: #aaa;
+	margin-top: 3px;
+	display: block;
+}
+
+
+/* setting */
+
+div.aSetting form{
+	background-color: white;
+	border: solid 1px #ddd;
+	margin-bottom: 10px;
+	
+}
+
+.aSetting .title{
+	margin-bottom: 5px;
+	display: block;
+	padding: 10px;	
+	background-color: #ddd;
+}
+.aSetting input[type='text'],.aSetting input[type='password'],.aSetting select
+{
+	width: 100%;
+	display: block;
+	border:0;
+	border:solid 1px #ddd;
+	padding:10px;
+	margin-bottom: 8px;
+}
+
+div.setting{
+	width:70%;
+	margin:0 auto;
+}
+
+div.myPosts .notf{
+	width: 200%;
+	background-color: white;
+	margin-bottom: 5px;
+	cursor: pointer;
+	padding: 15px;
+	display: block;
+
+}
+
+div.myPosts .notf:hover{
+	background-color: #ddd;
+}
+
+@media screen and (max-width:968px) {
+	.area_mid{
+		width: 60%;
+		margin:0;
+	}
+	.area-last{
+		width: 35%;
+	}
+	.myPosts .post{
+		width: 100%;
+	}
+	.menubar{
+		width: 100%;
+	}
+
+	div.setting{
+		width: 100%;
+	}
+
+}
+@media screen and (max-width:520px) {
+	.area_mid{
+		width: 100%;
+		margin:0;
+	}
+	.area-last{
+		display:none;
+	}
+
+	
+}

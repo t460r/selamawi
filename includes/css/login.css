@@ -1,0 +1,143 @@
+body{
+	font-family: 	"HelveticaNeue-Light","HelvLightIBM",Arial,sans-serif;
+
+}
+a {
+    text-decoration:none;
+    color:#6495ed;
+    margin-left: 0;
+
+}
+
+.feedb-suc{
+	background-color: #5EBD5E;
+	
+}
+.feedb-fail{
+	background-color: #F59090;
+
+}
+
+.feedb-fail,.feedb-suc{
+	color:white;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+div.log_main{
+	background-image: url('../images/loginback.jpg');
+	_background-image: url('../images/mainback.gif');
+	height: 95%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+
+div.log_main_wrap{
+	background-color: rgba(0,0,0,0.6);
+	height: 100%;
+	
+	z-index: 99;
+}
+
+div.log_form{
+	color:#666;
+	background: white;
+	width: 30%;
+
+	z-index: 99;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding: 10px;
+	border:solid 1px #d0d7dd;
+	position: absolute;
+	top:8%;
+	left: 65%;
+	box-shadow:  0px 0px 10px 10px rgba(50, 50, 50, 0.6);
+}
+.log_form h1{
+	color:#666;
+}
+
+
+.menubar{
+	z-index: 100;
+	height: 70px;
+	box-shadow:  0px 5px 10px 0px rgba(50, 50, 50, 0.6);
+	position: fixed;
+}
+.menubar .inpt{
+	padding: 8px 15px;
+	border: none;
+	background-color: transparent;
+	border:solid 1px gray;
+}
+.log_form .inpt,.forgotPass .inpt{
+	width: 100%;
+	padding: 10px 15px;
+	margin-bottom: 10px;
+}
+.forgotPass{
+	background:rgba(0,0,0,.6);
+	padding:10px;
+
+}
+
+.btn-sub{
+	background-color: #1a7ab9;
+	border:none;
+	padding:10px 20px;
+	color:white;
+	cursor: pointer;
+}
+
+div.quote{
+	color: white;
+	font-size: 34pt;
+	float:left;
+	width: 40%;
+	padding:10%;
+	position: fixed;
+}
+div.sep{
+	border-right: 4px solid white;
+	height: 100%; 
+	width: 5%;
+	margin-left: 50%;
+	font-style: italic;
+}
+
+nav.menubar{
+	background-color: white;
+	position: fixed;
+	width: 100%;
+	top:0;
+	border-bottom: solid 1px #ddd;
+}
+.menubar .wrap{
+	width: 95%;
+}
+.menubar form{
+	float: right;
+}
+
+@media screen and (max-width:768px) {
+	div.log_form{
+		width: 80%;
+		left: 10%;
+		margin: auto 0;
+		
+	}
+}
+@media screen and (max-width:568px) {
+	div.log_form{
+		width: 100%;
+
+		left:0%;
+		
+	}
+}
